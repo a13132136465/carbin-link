@@ -8,9 +8,9 @@
 
 | 项目 | 内容 |
 | --- | --- |
-| GitHub 用户名 | `待填写` |
-| 作业仓库地址 | `待填写` |
-| 合约代码目录 | `learn/YourGitHubName/task5/`（提交时按课程仓库调整） |
+| GitHub 用户名 | a13132136465 |
+| 作业仓库地址 | https://github.com/a13132136465/carbin-link.git |
+| 合约代码目录 | `learn/a13132136465/carbin-link` |
 
 ## 业务设计
 
@@ -46,11 +46,11 @@
 
 | 项目 | 内容 |
 | --- | --- |
-| 合约地址 | `待部署后填写，请勿伪造` |
-| 部署交易哈希 | `待部署后填写，请勿伪造` |
-| 部署交易链接 | `https://testnet.snowtrace.io/tx/<TX_HASH>` |
-| 合约浏览器链接 | `https://testnet.snowtrace.io/address/<CONTRACT_ADDRESS>` |
-| 代码仓库地址 | `待填写` |
+| 合约地址 | `0x835ce0b6f6f2c6331483b48fb67465f35f756bd9` |
+| 部署交易哈希 | `0x540e5e114d8753bd8e5fd40ec8643c22d2e31a9e5a591f75cdbff66f40908030` |
+| 部署交易链接 | `https://testnet.snowtrace.io/tx/0x540e5e114d8753bd8e5fd40ec8643c22d2e31a9e5a591f75cdbff66f40908030` |
+| 合约浏览器链接 | `https://testnet.snowtrace.io/address/0x835ce0b6f6f2c6331483b48fb67465f35f756bd9` |
+| 代码仓库地址 | `https://github.com/a13132136465/carbin-link.git` |
 
 ## 功能与权限
 
@@ -125,9 +125,7 @@ cp .env.example .env
 
 Windows PowerShell 可执行：
 
-```powershell
-Copy-Item .env.example .env
-```
+
 
 然后编辑 `.env`：
 
@@ -157,7 +155,6 @@ forge script script/DeployCarbonCreditToken.s.sol:DeployCarbonCreditToken \
 broadcast/DeployCarbonCreditToken.s.sol/43113/run-latest.json
 ```
 
-从中复制 `contractAddress` 和 `transactionHash`，填写到上方“部署结果”和截图材料中。部署是本环境尚未执行的唯一链上步骤，因为当前没有用户的 Fuji 私钥和测试 AVAX。
 
 ### 3. 验证合约
 
@@ -210,7 +207,6 @@ cast send <CONTRACT_ADDRESS> \
   --private-key "$PRIVATE_KEY" --rpc-url "$FUJI_RPC_URL"
 ```
 
-不要把任何真实私钥或包含私钥的终端画面放进截图。
 
 ## 截图清单
 
@@ -221,9 +217,8 @@ cast send <CONTRACT_ADDRESS> \
 - [ ] `03-mint.png`：mint 交易详情及 `Transfer(0x0, recipient, amount)` 事件。
 - [ ] `04-transfer.png`：transfer 交易详情和双方地址/数量。
 - [ ] `05-burn.png`：burn 交易详情及 `Transfer(holder, 0x0, amount)` 事件。
-- [ ] 可选 `06-tests.png`：`forge test -vv` 全部通过。
+- [ ] `06-tests.png`：`forge test -vv` 全部通过。
 
-截图后把真实链接填入 README，并确保浏览器网络为 Fuji、Chain ID 为 43113。
 
 ## 风险边界
 
